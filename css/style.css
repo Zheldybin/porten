@@ -1,0 +1,464 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Playfair Display', serif, 'PT Sans', sans-serif;
+}
+
+.button {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+hr {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.scrol {
+    height: 400px;
+    background-color: tomato;
+    margin-top: 40px;
+}
+
+/* header */
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.header-item svg {
+    margin-right: 14px;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item a {
+    padding: 31px 20px;
+}
+
+.nav-item a:hover {
+    background-color: #1F1F1F;
+}
+
+.nav-icon {
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon-search {
+    margin-left: 40px;
+    position: relative;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #F8F7F4;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.search-input input {
+    background: #FFFFFF;
+    border: 1px solid #D3D3D2;
+    border-radius: 4px;
+}
+
+.nav-icon-search:hover .search-input {
+    display: block;
+}
+
+.nav-icon svg path:hover {
+    fill: red;
+    background-color: #1F1F1F;
+    cursor: pointer;
+}
+
+/* Slider */
+
+.slider img {
+    padding: 94px 68px;
+    border: 4px solid #FFFFFF;
+    margin-top: 160px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    background-image: url(../img/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.slider p {
+    width: 730px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 154px;
+}
+
+/* новая коллекция */
+
+.hit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hit-new h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 93px;
+}
+
+.hit-new hr {
+    margin-top: 30px;
+}
+
+.hit-new__item img {
+    padding: 56px 23px;
+    background-color: #191B1C;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.praic {
+    font-size: 16px;
+    line-height: 19px;
+    color: #D0D0D0;
+}
+
+.hit-new__main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 80px 93px 80px;
+}
+
+.new-colection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(../img/new_coltction.jpg), #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new-colection h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 484px 0 0 0;
+}
+
+.new-colection hr {
+    margin-top: 30px;
+}
+
+.button-new {
+    border: 1px solid #FFFFFF;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+.button-new:hover {
+    background-color: white;
+    color: black;
+}
+
+/* старая коллекция */
+
+.old-colection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.old-colection__img {
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(../img/old-collection.jpg), #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.old-colection__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.old-colection__main h2 {
+    margin: 100px 0 0 0;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.old-colection__main hr {
+    margin-top: 40px;
+}
+
+.old-colection__main p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    width: 471px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-old {
+    margin: 61px 0 100px 0;
+}
+
+/* Каталог */
+
+.new_arrival {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.new_arrival h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 120px 0 0 0;
+}
+
+.new_arrival hr {
+    margin-top: 40px;
+}
+
+.catalog {
+    margin-top: 81px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 
+}
+
+/* бренды */
+
+.brend {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.brend h2 {
+    margin: 210px 0 0 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.brend hr {
+    margin-top: 40px;
+}
+
+.brend-img {
+    margin: 40px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Подвал */
+
+.footer-bg {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-main {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    column-gap: 30px;
+}
+
+.footer-about h2 {
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.footer-about p {
+    margin: 40px 0 100px 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.footer-categories h2 {
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.button-footer {
+    margin-top: 40px;
+}
+
+.button-footer__item {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.button-footer__item:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer-mailing h2 {
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.footer-mailing p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 40px;
+}
+
+.footer-input {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 13px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+    border: none;
+}
+
+.footer-input::placeholder {
+    color: #969696;
+}
+
+.footer-mailing div {
+    margin-top: 40px;
+}
+
+.copyright {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #D0D0D0;
+padding: 17px 0;
+}
